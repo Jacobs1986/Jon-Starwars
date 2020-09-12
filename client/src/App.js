@@ -7,12 +7,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Styling
 import "./App.css"
 
+// Pages
+import Home from "./components/pages/home.pages"
+
 class App extends Component {
     render() {
         return (
-            <div>
-                This is a test
-            </div>
+            <Router>
+                <div>
+                    <Route exact path="/" component={Home} />
+                </div>
+            </Router>
         );
     };
 }
