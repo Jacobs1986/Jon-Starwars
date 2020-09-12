@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
  // Bootstrap
-import { Container, Row, Col, Card, CardColumns } from "react-bootstrap";
+import { Container, Row, Card, CardColumns } from "react-bootstrap";
 
 class Home extends Component {
     state= {
