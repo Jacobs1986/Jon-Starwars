@@ -10,6 +10,11 @@ class Home extends Component {
                 <Container>
                     <h1>Starwars Comic by Jonathan Morales</h1>
                     <p>Disclaimer: This is a fan made comic. I do not own or make any money from this comic. All characters are owned by Disney.</p>
+                    <Row>
+                        <Col md={12}>
+                            
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         );
