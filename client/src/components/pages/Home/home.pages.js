@@ -4,10 +4,6 @@ import React, { Component } from "react";
 import { Container, Row, Card } from "react-bootstrap";
 
 class Home extends Component {
-    state= {
-        images: ["page1", "page2", "page3", "page4"]
-    }
-    
     render() {
         return (
             <div>
