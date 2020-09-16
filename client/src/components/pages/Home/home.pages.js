@@ -8,7 +8,8 @@ class Home extends Component {
         return (
             <div>
                 <Container>
-                    <h1>Starwars Comic by Jonathan Morales</h1>
+                    <h1 className="center">The Rise of Skywalker AU</h1>
+                    <h3 className="center">A fan comic by Jonathan Morales</h3>
                     <p>Disclaimer: This is a fan made comic. I do not own or make any money from this comic. All characters are owned by Disney.</p>
                     <Row>
                         <Card style={{ width: '18rem'}} bg="dark">
