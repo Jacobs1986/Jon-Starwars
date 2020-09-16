@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
  // Bootstrap
-import { Container, Row, Card, CardColumns } from "react-bootstrap";
+import { Container, Row, Card } from "react-bootstrap";
 
 class Home extends Component {
     state= {
@@ -15,7 +15,12 @@ class Home extends Component {
                     <h1>Starwars Comic by Jonathan Morales</h1>
                     <p>Disclaimer: This is a fan made comic. I do not own or make any money from this comic. All characters are owned by Disney.</p>
                     <Row>
-                    
+                        <Card style={{ width: '18rem'}} bg="dark">
+                            <Card.Img src={require("../Images/chapter-1/page-1.JPG")} />
+                            <Card.Body>
+                                <Card.Title style={{ textAlign: 'center' }}>Chapter 1</Card.Title>
+                            </Card.Body>
+                        </Card>
                     </Row>
                 </Container>
             </div>
