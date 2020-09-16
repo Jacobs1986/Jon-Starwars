@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"
 
 // Pages
-import Home from "./components/pages/home.pages"
+import Home from "./components/pages/Home/home.pages"
 
 class App extends Component {
     render() {
