@@ -9,6 +9,7 @@ import "./App.css"
 
 // Pages
 import Home from "./components/pages/Home/home.pages"
+import Chapter from "./components/pages/Comic/comic.pages"
 
 class App extends Component {
     render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/chapter" component={Chapter} />
                 </div>
             </Router>
         );
