@@ -16,7 +16,7 @@ class Home extends Component {
                     <p>Disclaimer: This is a fan made comic. I do not own or make any money from this comic. All characters are owned by Disney.</p>
                     <Row>
                         <Card style={{ width: '18rem'}} bg="dark">
-                            <Card.Img src={require("../Images/chapter-1/page-1.JPG")} />
+                            <a href="/chapter?chapter1"><Card.Img src={require("../Images/chapter-1/page-1.JPG")} /></a>
                             <Card.Body>
                                 <Card.Title style={{ textAlign: 'center' }}>Chapter 1</Card.Title>
                             </Card.Body>
