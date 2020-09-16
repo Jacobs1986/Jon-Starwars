@@ -5,8 +5,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 class Chapter extends Component {
     state = {
-        images: ["page-1", "page-2", "page-3", "page-4"],
-        title: "Chapter 1"
+        images: [],
+        title: ""
     }
 
     render() {
