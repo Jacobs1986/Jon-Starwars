@@ -16,7 +16,7 @@ class Chapter extends Component {
                     <h1 style={{ textAlign: 'center' }}>{this.state.title}</h1>
                     {this.state.images.map((image, index) => (
                         <Row>
-                            <Col md={12}>
+                            <Col md={12} key={index}>
                                 <Image src={require(`../Images/chapter-1/${image}.JPG`)} fluid/>
                             </Col>
                         </Row>
