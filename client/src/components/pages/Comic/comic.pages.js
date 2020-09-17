@@ -59,7 +59,7 @@ class Chapter extends Component {
                         ? <video width="100%" controls>
                             <source src={require(`../Videos/${this.state.video}.MP4`)} />
                         </video>
-                        : <p>There is no video.</p>
+                        : <div></div>
                     }
                     {this.state.images.map((image, index) => (
                         <Row key={index}>
