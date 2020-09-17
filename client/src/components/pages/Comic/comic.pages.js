@@ -48,6 +48,7 @@ class Chapter extends Component {
                             </Col>
                         </Row>
                     ))}
+                    <a href="/">Back</a>
                 </Container>
             </div>
         );
