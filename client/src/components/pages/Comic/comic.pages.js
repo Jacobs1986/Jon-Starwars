@@ -10,7 +10,8 @@ class Chapter extends Component {
     state = {
         images: [],
         folder: "",
-        title: ""
+        title: "",
+        video: ""
     }
 
     componentDidMount() {
@@ -32,7 +33,8 @@ class Chapter extends Component {
                 this.setState({
                     title: "Chapter 2",
                     folder: "chapter-2",
-                    images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9"]
+                    images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9"],
+                    video: "chapter-2"
                 })
                 break
             case "chapter3":
@@ -47,10 +49,17 @@ class Chapter extends Component {
     }
 
     render() {
+        const thereIsVideo = this.state.video;
         return (
             <div>
                 <Container>
                     <h1 style={{ textAlign: 'center' }}>{this.state.title}</h1>
+                    {thereIsVideo
+                        ? <video width="100%" controls>
+                            <source src={require(`../Videos/${this.state.video}.MP4`)} />
+                        </video>
+                        : <p>There is no video.</p>
+                    }
                     {this.state.images.map((image, index) => (
                         <Row key={index}>
                             <Col md={12}>
