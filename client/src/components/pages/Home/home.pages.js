@@ -27,6 +27,12 @@ class Home extends Component {
                                     <Card.Title style={{ textAlign: 'center' }}>Chapter 2</Card.Title>
                                 </Card.Body>
                             </Card>
+                            <Card style={{ width: '20rem' }} bg="dark">
+                                <a href="/chapter?chapter3"><Card.Img src={require("../Images/chapter-3/page-1.JPG")} /></a>
+                                <Card.Body>
+                                    <Card.Title style={{ textAlign: 'center' }}>Chapter 3</Card.Title>
+                                </Card.Body>
+                            </Card>
                         </CardColumns>
                     </Row>
                 </Container>
