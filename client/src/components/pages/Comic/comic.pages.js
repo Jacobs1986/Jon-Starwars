@@ -3,6 +3,9 @@ import React, { Component } from "react";
  // Bootstrap
 import { Container, Row, Col, Image } from "react-bootstrap";
 
+// styling
+import "./comic.pages.css"
+
 class Chapter extends Component {
     state = {
         images: [],
