@@ -35,6 +35,13 @@ class Chapter extends Component {
                     images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9"]
                 })
                 break
+            case "chapter3":
+                this.setState({
+                    title: "Chapter 3",
+                    folder: "chapter-3",
+                    images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9", "page-10", "page-11"]
+                })
+                break
             default: 
         }
     }
