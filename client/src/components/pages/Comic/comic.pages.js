@@ -12,7 +12,8 @@ class Chapter extends Component {
         folder: "",
         title: "",
         video1: "",
-        video2: ""
+        video2: "",
+        video3: ""
     }
 
     componentDidMount() {
@@ -61,7 +62,8 @@ class Chapter extends Component {
                     folder: "chapter-5",
                     images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9", "page-10", "page-11", "page-12", "page-13", "page-14", "page-15", "page-16", "page-17", "page-18", "page-19", "page-20", "page-21", "page-22", "page-23", "page-24", "page-25", "page-26", "page-27", "page-28", "page-29", "page-30", "page-31", "page-31", "page-33", "page-34", "page-35"],
                     video1: "chapter-5a",
-                    video2: "chapter-5b"
+                    video2: "chapter-5b",
+                    video3: "chapter-5c"
                 })
                 break
             default:
@@ -71,6 +73,7 @@ class Chapter extends Component {
     render() {
         const thereIsVideo1 = this.state.video1;
         const thereIsVideo2 = this.state.video2;
+        const thereIsVideo3 = this.state.video3;
         return (
             <div>
                 <Container>
@@ -84,6 +87,12 @@ class Chapter extends Component {
                     {thereIsVideo2
                         ? <video width="100%" controls>
                             <source src={require(`../Videos/${this.state.video2}.MP4`)} />
+                        </video>
+                        : <div></div>
+                    }
+                    {thereIsVideo3
+                        ? <video width="100%" controls>
+                            <source src={require(`../Videos/${this.state.video3}.MP4`)} />
                         </video>
                         : <div></div>
                     }
