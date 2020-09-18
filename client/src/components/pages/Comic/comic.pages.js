@@ -43,7 +43,8 @@ class Chapter extends Component {
                     title: "Chapter 3",
                     folder: "chapter-3",
                     images: ["page-1", "page-2", "page-3", "page-4", "page-5", "page-6", "page-7", "page-8", "page-9", "page-10", "page-11"],
-                    video1: "chapter-3"
+                    video1: "chapter-3a",
+                    video2: "chapter-3b"
                 })
                 break
             case "chapter4":
